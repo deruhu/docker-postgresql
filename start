@@ -4,7 +4,7 @@ set -e
 PG_HOME="/var/lib/postgresql"
 PG_CONFDIR="/etc/postgresql/${PG_VERSION}/main"
 PG_BINDIR="/usr/lib/postgresql/${PG_VERSION}/bin"
-PG_DATADIR="${PG_HOME}/data"
+PG_DATADIR="${PG_HOME}/${PG_VERSION}/main"
 
 DB_NAME=${DB_NAME:-}
 DB_USER=${DB_USER:-}
